@@ -1,7 +1,6 @@
 require_relative "../lib/dijkstra"
 
 Test = true
-
 class Runner
   def initialize
     data_extension = Test ? "_test" : "" 

@@ -35,4 +35,4 @@ Ruby does not natively implement a priority queue. The Set, @q, holding nodes th
 
 The demo code is my solution to AoC2022 Day12 Part1. It is problem specific but uses the more generic Dijkstra implementation to search for the shortest path.
 
-This implementation is tolerably fast for modest path searches. The AoC2022 Day12 puzzle requires 2 seconds to create the node list and find the shortest path with Ruby 3.1.2 running in a VirtualBox allocated 1 processor. There are optimizations possible within the implementation. 
+This implementation is tolerably fast for modest path searches. The AoC2022 Day12 puzzle requires 0.2 seconds to create the node list and find the shortest path with Ruby 3.1.2 running in a VirtualBox allocated 1 processor. There are optimizations possible within the implementation. 

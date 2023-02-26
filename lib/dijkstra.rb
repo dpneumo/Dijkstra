@@ -1,9 +1,3 @@
-# Dijkstra algorithm
-#   Initialize with the nodes to be searched. (class Node for details)
-#   Call #shortest_path with the start node and target node
-#   Returns an array with:
-#     list of nodes on the found path
-#     the path distance
 require 'set'
 require_relative "node.rb"
 

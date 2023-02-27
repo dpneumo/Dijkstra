@@ -5,9 +5,9 @@
 
 See [https://en.wikipedia.org/wiki/Dijkstra's_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) Dijkstra's algorithm for finding the shortest paths between nodes in a weighted graph
 
-Though I was aware of Dijkstra's algorithm I had no use case for it until I encountered Advent of Code. Implementing this in Ruby has helped my understanding of the algorithm. Putting it on Github will make it easier for me to find in the future and perhaps be useful to someone else. 
+Though I was aware of Dijkstra's algorithm I had no use case for it until I encountered Advent of Code. Implementing this in Ruby has helped my understanding of the algorithm. Read through descriptions of the algorithm then with "book closed" wrote the code to cement the understanding. Lots of iterations and "puts" testing. Frequent renaming to make the code more readable and understandable (to me). Naming is hard. :-) 
 
-Corrections and recommendations for improvements are welcome.
+Putting it on Github will make it easier for me to find in the future and perhaps be useful to someone else. Corrections and recommendations for improvements are welcome.
 
 
 The 2 classes used:
@@ -19,10 +19,9 @@ The 2 classes used:
     - @visited: List of nodes visited as the algorithm progresses
  - Call shortest_path with the start node and target node
  - Returns an array with: 
-	  - list of nodes on the found path the path distance
+	  - list of nodes on the found path and the path distance
 
 **Node** 
-
  - Initialize with it's index in a list of nodes
 	 - @pathdist is initialized to infinity for Dijkstra
 	 - @nbrs is a hash
@@ -31,7 +30,7 @@ The 2 classes used:
 	 - <=> method compares nodes by path distance
 
 
-Ruby does not natively implement a priority queue. The Set, @q, holding nodes that implement the 'spaceship' operator, <=>, and including the Comparable module provides the functionality of a priority queue that Dijkstra requires.
+Ruby does not natively implement a priority queue. @q is a Set instance that holds nodes that implement the 'spaceship' operator ( <=> ) and include the Comparable module tp provide the functionality of a priority queue that Dijkstra requires.
 
 The demo code is my solution to AoC2022 Day12 Part1. It is problem specific but uses the more generic Dijkstra implementation to search for the shortest path.
 

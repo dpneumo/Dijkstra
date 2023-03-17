@@ -13,7 +13,7 @@ class Runner
     find_start_and_tgt
     build_nodes
     path, pathdist = find_path_list
-    puts pathdist
+    puts "path: #{path}  pathdist: #{pathdist}"
   end
 
   def read_file
